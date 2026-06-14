@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="Normal">
+        <h1>Hello World</h1>
+
+    </div>
+    <div id="WithJS">
+    </div>
+    <div id="WithReact">
+    </div>
+
+    <div id="structure">
+    </div>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./app.js">
+        // Hello world using React
+        const headingReact = React.createElement("h1",{},"Hello World From React");
+
+        const withReact = ReactDOM.createRoot(document.getElementById("WithReact"));
+        // most costly operation is the DOM nodes that need to be manipulated , DOM tree changes.
+        withReact.render(headingReact);
+
+
+    </script>
+</body>
+</html>
