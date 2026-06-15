@@ -1,0 +1,16 @@
+{
+  "name": "foundation-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html", 
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
